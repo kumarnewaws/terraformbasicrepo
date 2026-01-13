@@ -1,0 +1,6 @@
+vpc_cidr        = "10.60.0.0/16"
+vpc_name        = "ProdDemo"
+Public_subnet_1 = "10.60.1.0/24"
+Public_subnet_2 = "10.60.2.0/24"
+az1             = "ap-south-1a"
+az2             = "ap-south-1b"
