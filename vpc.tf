@@ -29,3 +29,12 @@ resource "aws_subnet" "DemoSubnet-2" {
     "Name" = "${var.vpc_name}-Public_Subnet-2"
   }
 }
+
+resource "aws_subnet" "DemoSubnet-3" {
+  vpc_id            = aws_vpc.DemoBasicVPC.id
+  cidr_block        = var.Public_subnet_3
+  availability_zone = var.az3
+  tags = {
+    "Name" = "${var.vpc_name}-Public_Subnet-3"
+  }
+}
